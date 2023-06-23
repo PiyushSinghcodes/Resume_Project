@@ -1,0 +1,15 @@
+html, body{
+    min-height: 100%;
+}
+.container-fluid{
+    min-height: 100%;
+}
+a.nav-link{
+    color: #fff;
+}
+a.nav-link:hover{
+    color: orange;
+}
+a.nav-link.active{
+    background-color: orange;
+}

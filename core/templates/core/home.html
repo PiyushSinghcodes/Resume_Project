@@ -1,0 +1,65 @@
+<!Doctype html>
+<html lang="en">
+    {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/styles.css' %}">
+  </head>
+  <body class="bg-dark">
+   <div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-sm-2">
+          <div class="border-right border-warning h-100 " >
+            <div class="text-center">
+                <img src="{%static 'core/images/Pic.jpeg'%}" class="img-fluid rounded-circle mt-5" width="100px" height="100px" >
+            </div>
+            <h3 class="text-center text-white mt-3" style="font-family: 'satisfy';">Piyush Singh</h3>
+            <hr class="border-light">
+             <nav class="nav flex-column text-center">
+                <a class="nav-link {{c}}" href="{% url 'home'%}">HOME</a>
+                <a class="nav-link {{c4}}" href="{% url 'services'%}">SERVICES</a>
+                <a class="nav-link {{c2}}" href="{% url 'skills'%}">SKILLS</a>
+                <a class="nav-link {{c3}}" href="{% url 'contact'%}">CONTACT</a>
+               </nav>
+          </div>
+        </div>
+        <div class="col-sm-10">
+        {%block content%}
+        <div class="text-center">
+            <img src="{%static 'core/images/Pic.jpeg'%}" class="img-thumbnail" width="250px" height="150px">
+        </div>
+        <div class="mt-5 text-white">
+            <h1 class="font-weight-bold" style="font-family: 'Satisfy', cursive; text-indent:20px ;">Hello,</h1>
+         </div>
+         <div class="px-5" style="line-height:2rem;">
+          <p style="color: white; text-indent:100px" class="border-bottom">
+            I am <b class="text-warning">Piyush Singh</b>. I am a student of B.Tech in Electronics and Communication Engineering. I am currently in 3rd year. I am a Web Developer. I have a good knowledge of HTML, CSS, Bootstrap, JavaScript, Django, Python, C, Java. I am also a good problem solver. I have a good knowledge of Data Structures and Algorithms. I am a good team player. I am also a good leader. I have a good communication skill. I am a good listener. I am a good learner. I am a good motivator. I am a good teacher. I am a good speaker. I am a good writer. I am a good reader. I am a good thinker. I am a good observer. I am a good analyzer. I am a good planner. I am a good organizer. I am a good doer. I am a good helper. I am a good friend. I am a good human being. I am a good son. I am a good brother. I am a good student. I am a good citizen. I am a good citizen of India. I am a good citizen of the world. I am a good citizen of the universe. I am a good citizen of the multiverse.
+          </p>
+         </div>
+         <div class="text-center">
+            <a href="{%url 'contact'%}" class="btn btn-outline-warning mr-5 my-3">Dowmload Resume</a>
+            <a href="{%url 'contact'%}" class="btn btn-outline-info my-3">Contact</a>
+
+        </div>
+        
+        {%endblock content%}
+        </div>
+
+    </div>
+   </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</body>
+</html>
