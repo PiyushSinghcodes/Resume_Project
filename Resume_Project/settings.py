@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'core',
     'edu',
     'serv',
+    'fontawesomefree',
 ]
 
 MIDDLEWARE = [
